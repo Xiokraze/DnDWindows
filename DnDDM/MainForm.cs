@@ -52,14 +52,19 @@ namespace DnDDM
             {
                 Dock = DockStyle.Fill
             };
-            this.Controls.Add(control);
-            this.Text = DefaultValues.DnDTitle + " - Items";
+            Program.AddControl(control);
+            this.Text = DefaultValues.DnDTitle + " - Armor";
         }
 
 
         private void MenuArtClicked(object sender, EventArgs e)
         {
-
+            StandardItemControl control = new StandardItemControl(DefaultValues.Art)
+            {
+                Dock = DockStyle.Fill
+            };
+            Program.AddControl(control);
+            this.Text = DefaultValues.DnDTitle + " - Art";
         }
 
 
