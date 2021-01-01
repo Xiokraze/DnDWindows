@@ -53,7 +53,7 @@ namespace DnDDM
                 Dock = DockStyle.Fill
             };
             Program.AddControl(control);
-            this.Text = DefaultValues.DnDTitle + " - Armor";
+            this.Text = DefaultValues.DnDTitle + " - " + DefaultValues.Armor;
         }
 
 
@@ -64,30 +64,50 @@ namespace DnDDM
                 Dock = DockStyle.Fill
             };
             Program.AddControl(control);
-            this.Text = DefaultValues.DnDTitle + " - Art";
+            this.Text = DefaultValues.DnDTitle + " - " + DefaultValues.Art;
         }
 
 
         private void MenuGemsClicked(object sender, EventArgs e)
         {
-
+            StandardItemControl control = new StandardItemControl(DefaultValues.Gem)
+            {
+                Dock = DockStyle.Fill
+            };
+            Program.AddControl(control);
+            this.Text = DefaultValues.DnDTitle + " - " + DefaultValues.Gem;
         }
 
 
         private void MenuGoodsClicked(object sender, EventArgs e)
         {
-
+            StandardItemControl control = new StandardItemControl(DefaultValues.Good)
+            {
+                Dock = DockStyle.Fill
+            };
+            Program.AddControl(control);
+            this.Text = DefaultValues.DnDTitle + " - " + DefaultValues.Good;
         }
 
         private void MenuWeaponsClicked(object sender, EventArgs e)
         {
-
+            StandardItemControl control = new StandardItemControl(DefaultValues.Weapon)
+            {
+                Dock = DockStyle.Fill
+            };
+            Program.AddControl(control);
+            this.Text = DefaultValues.DnDTitle + " - " + DefaultValues.Weapon;
         }
 
 
         private void MenuTrinketClicked(object sender, EventArgs e)
         {
-
+            StandardItemControl control = new StandardItemControl(DefaultValues.Trinket)
+            {
+                Dock = DockStyle.Fill
+            };
+            Program.AddControl(control);
+            this.Text = DefaultValues.DnDTitle + " - " + DefaultValues.Trinket;
         }
     }
 }
