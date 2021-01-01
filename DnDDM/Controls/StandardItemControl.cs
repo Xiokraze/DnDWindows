@@ -28,6 +28,22 @@ namespace DnDDM.Controls
             {
                 UpdateArtTable();
             }
+            else if (control.Equals(DefaultValues.Gem))
+            {
+                UpdateGemTable();
+            }
+            else if (control.Equals(DefaultValues.Good))
+            {
+                UpdateGoodTable();
+            }
+            else if (control.Equals(DefaultValues.Weapon))
+            {
+                UpdateWeaponTable();
+            }
+            else if (control.Equals(DefaultValues.Trinket))
+            {
+                UpdateTrinketTable();
+            }
         }
 
 
@@ -67,6 +83,82 @@ namespace DnDDM.Controls
                     item.Description,
                     item.Classification,
                     item.Value
+                };
+                dataGridView.Rows.Add(row);
+            });
+        }
+
+
+        private void UpdateGemTable()
+        {
+            dataGridView.Columns.Add("ItemName", "Name");
+            dataGridView.Columns.Add("Description", "Description");
+            dataGridView.Columns.Add("Classification", "Classification");
+            dataGridView.Columns.Add("Value", "Value");
+            itemLists.gems.ForEach(item =>
+            {
+                string[] row = {
+                    item.ItemName,
+                    item.Description,
+                    item.Classification,
+                    item.Value
+                };
+                dataGridView.Rows.Add(row);
+            });
+        }
+
+
+        private void UpdateGoodTable()
+        {
+            dataGridView.Columns.Add("Description", "Description");
+            dataGridView.Columns.Add("Classification", "Classification");
+            dataGridView.Columns.Add("Value", "Value");
+            dataGridView.Columns.Add("Weight", "Weight");
+            itemLists.goods.ForEach(item =>
+            {
+                string[] row = {
+                    item.Description,
+                    item.Classification,
+                    item.Value,
+                    item.Weight
+                };
+                dataGridView.Rows.Add(row);
+            });
+        }
+
+
+        private void UpdateTrinketTable()
+        {
+            dataGridView.Columns.Add("Description", "Description");
+            dataGridView.Columns.Add("Classification", "Classification");
+            itemLists.trinkets.ForEach(item =>
+            {
+                string[] row = {
+                    item.Description,
+                    item.Classification
+                };
+                dataGridView.Rows.Add(row);
+            });
+        }
+
+
+        private void UpdateWeaponTable()
+        {
+            dataGridView.Columns.Add("Description", "Description");
+            dataGridView.Columns.Add("Classification", "Classification");
+            dataGridView.Columns.Add("Value", "Value");
+            dataGridView.Columns.Add("Damage", "Damage");
+            dataGridView.Columns.Add("Properties", "Properties");
+            dataGridView.Columns.Add("Weight", "Weight");
+            itemLists.weapons.ForEach(item =>
+            {
+                string[] row = {
+                    item.Description,
+                    item.Classification,
+                    item.Value,
+                    item.Damage,
+                    item.Properties,
+                    item.Weight
                 };
                 dataGridView.Rows.Add(row);
             });
