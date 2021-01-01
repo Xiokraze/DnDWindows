@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace DnDDM.Classes
 {
@@ -42,7 +37,6 @@ namespace DnDDM.Classes
         public static string ammunition = "Ammunition";
         public static string arcaneFocus = "Arcane Focus";
         public static string druidicFocus = "Druidic Focus";
-        public static string good = "General Good";
         public static string holySymbol = "Holy Symbol";
 
         // Weapons.
