@@ -9,7 +9,7 @@ namespace DnDDM.Classes
     public class StandardItem
     {
         public string ArmorClass { get; set; }
-        public string Name { get; set; }
+        public string ItemName { get; set; }
         public string Classification { get; set; }
         public string Damage { get; set; }
         public string Description { get; set; }
@@ -45,7 +45,7 @@ namespace DnDDM.Classes
         // Gem Constructor.
         public StandardItem(string name, string description, string value)
         {
-            this.Name = name;
+            this.ItemName = name;
             this.Description = description;
             this.Value = value;
             this.Classification = DefaultValues.Gem;
