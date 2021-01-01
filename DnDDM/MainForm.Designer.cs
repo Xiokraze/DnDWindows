@@ -87,6 +87,7 @@
             this.armorToolStripMenuItem.Name = "armorToolStripMenuItem";
             this.armorToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.armorToolStripMenuItem.Text = "Armor";
+            this.armorToolStripMenuItem.Click += new System.EventHandler(this.MenuArmorClicked);
             this.armorToolStripMenuItem.MouseEnter += new System.EventHandler(this.MouseEnterMenuItem);
             this.armorToolStripMenuItem.MouseLeave += new System.EventHandler(this.MouseLeaveMenuItem);
             // 
@@ -97,6 +98,7 @@
             this.artToolStripMenuItem.Name = "artToolStripMenuItem";
             this.artToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.artToolStripMenuItem.Text = "Art";
+            this.artToolStripMenuItem.Click += new System.EventHandler(this.MenuArtClicked);
             this.artToolStripMenuItem.MouseEnter += new System.EventHandler(this.MouseEnterMenuItem);
             this.artToolStripMenuItem.MouseLeave += new System.EventHandler(this.MouseLeaveMenuItem);
             // 
@@ -107,6 +109,7 @@
             this.gemsToolStripMenuItem.Name = "gemsToolStripMenuItem";
             this.gemsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.gemsToolStripMenuItem.Text = "Gems";
+            this.gemsToolStripMenuItem.Click += new System.EventHandler(this.MenuGemsClicked);
             this.gemsToolStripMenuItem.MouseEnter += new System.EventHandler(this.MouseEnterMenuItem);
             this.gemsToolStripMenuItem.MouseLeave += new System.EventHandler(this.MouseLeaveMenuItem);
             // 
@@ -116,7 +119,8 @@
             this.generalItemsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(206)))), ((int)(((byte)(101)))));
             this.generalItemsToolStripMenuItem.Name = "generalItemsToolStripMenuItem";
             this.generalItemsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.generalItemsToolStripMenuItem.Text = "General Items";
+            this.generalItemsToolStripMenuItem.Text = "Goods";
+            this.generalItemsToolStripMenuItem.Click += new System.EventHandler(this.MenuGoodsClicked);
             this.generalItemsToolStripMenuItem.MouseEnter += new System.EventHandler(this.MouseEnterMenuItem);
             this.generalItemsToolStripMenuItem.MouseLeave += new System.EventHandler(this.MouseLeaveMenuItem);
             // 
@@ -127,6 +131,7 @@
             this.trinketsToolStripMenuItem.Name = "trinketsToolStripMenuItem";
             this.trinketsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.trinketsToolStripMenuItem.Text = "Trinkets";
+            this.trinketsToolStripMenuItem.Click += new System.EventHandler(this.MenuTrinketClicked);
             this.trinketsToolStripMenuItem.MouseEnter += new System.EventHandler(this.MouseEnterMenuItem);
             this.trinketsToolStripMenuItem.MouseLeave += new System.EventHandler(this.MouseLeaveMenuItem);
             // 
@@ -137,6 +142,7 @@
             this.weaponsToolStripMenuItem.Name = "weaponsToolStripMenuItem";
             this.weaponsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.weaponsToolStripMenuItem.Text = "Weapons";
+            this.weaponsToolStripMenuItem.Click += new System.EventHandler(this.MenuWeaponsClicked);
             this.weaponsToolStripMenuItem.MouseEnter += new System.EventHandler(this.MouseEnterMenuItem);
             this.weaponsToolStripMenuItem.MouseLeave += new System.EventHandler(this.MouseLeaveMenuItem);
             // 

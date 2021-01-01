@@ -1,4 +1,5 @@
 ﻿using DnDDM.Classes;
+using DnDDM.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,7 @@ namespace DnDDM
             Program.mainMenu = menuStrip;
         }
 
+
         private void MouseEnterMenuItem(object sender, EventArgs e)
         {
             ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
@@ -35,11 +37,52 @@ namespace DnDDM
             menuItem.ForeColor = DefaultValues.DnDBlack;
         }
 
+
         private void MouseLeaveMenuItem(object sender, EventArgs e)
         {
             ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
             menuItem.BackColor = DefaultValues.DnDBlack;
             menuItem.ForeColor = DefaultValues.DnDGold;
+        }
+
+
+        private void MenuArmorClicked(object sender, EventArgs e)
+        {
+            StandardItemControl control = new StandardItemControl(DefaultValues.Armor)
+            {
+                Dock = DockStyle.Fill
+            };
+            this.Controls.Add(control);
+            this.Text = DefaultValues.DnDTitle + " - Items";
+        }
+
+
+        private void MenuArtClicked(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void MenuGemsClicked(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void MenuGoodsClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuWeaponsClicked(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void MenuTrinketClicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
