@@ -4,6 +4,8 @@ namespace DnDDM.Classes
 {
     public class StandardItemLists
     {
+        public StandardItemLists() { }
+
         public List<StandardItem> armor = new List<StandardItem>()
         {
             new StandardItem("Padded", "5 gp", "11 + Dex Modifier", "-", "Disadvantage", "8 lbs", DefaultValues.lightAmor),
