@@ -49,6 +49,12 @@
     <Compile Include="Classes\DefaultValues.cs" />
     <Compile Include="Classes\StandardItem.cs" />
     <Compile Include="Classes\StandardItemLists.cs" />
+    <Compile Include="Controls\StandardItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\StandardItemControl.Designer.cs">
+      <DependentUpon>StandardItemControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="SplashControl.Designer.cs">
       <DependentUpon>SplashControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\StandardItemControl.resx">
+      <DependentUpon>StandardItemControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
