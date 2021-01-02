@@ -15,10 +15,10 @@ namespace DnDDM.Classes
         // Item Classifications.
         public static string Armor = "Armor";
         public static string Art = "Art";
-        public static string Gem = "Gem";
-        public static string Good = "Good";
-        public static string Trinket = "Trinket";
-        public static string Weapon = "Weapon";
+        public static string Gem = "Gems";
+        public static string Good = "Goods";
+        public static string Trinket = "Trinkets";
+        public static string Weapon = "Weapons";
 
         // Gold Values.
         public static string gp10 = "10 gp";
