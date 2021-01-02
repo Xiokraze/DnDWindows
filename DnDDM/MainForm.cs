@@ -1,13 +1,7 @@
 ﻿using DnDDM.Classes;
 using DnDDM.Controls;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace DnDDM
@@ -17,6 +11,8 @@ namespace DnDDM
         public MainForm()
         {
             InitializeComponent();
+            LoadDnDFont();
+
             menuStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
             SplashControl control = new SplashControl()
             {
@@ -27,6 +23,26 @@ namespace DnDDM
             Program.controlCollection = this.Controls;
             Program.mainForm = this;
             Program.mainMenu = menuStrip;
+        }
+
+
+        private void LoadDnDFont()
+        {
+            //Select your font from the resources.
+            //My font here is "Digireu.ttf"
+            int fontLength = Properties.Resources.DnDC.Length;
+
+            // create a buffer to read in to
+            byte[] fontdata = Properties.Resources.DnDC;
+
+            // create an unsafe memory block for the font data
+            System.IntPtr data = Marshal.AllocCoTaskMem(fontLength);
+
+            // copy the bytes to the unsafe memory block
+            Marshal.Copy(fontdata, 0, data, fontLength);
+
+            // pass the font to the font collection
+            Program.PFC.AddMemoryFont(data, fontLength);
         }
 
 

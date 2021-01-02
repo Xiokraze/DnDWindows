@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,8 @@ namespace DnDDM
         public static Control.ControlCollection controlCollection;
         public static MainForm mainForm;
         public static MenuStrip mainMenu;
+        public static PrivateFontCollection PFC = new PrivateFontCollection();
+
 
 
         /// <summary>
