@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using DnDDM.Classes;
 
@@ -16,10 +17,6 @@ namespace DnDDM.Controls
 
         private void UpdateGUI(string control)
         {
-            // Update cell font styles.
-            dataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
-            dataGridView.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
-
             if (control.Equals(DefaultValues.Armor))
             {
                 UpdateArmorTable();
